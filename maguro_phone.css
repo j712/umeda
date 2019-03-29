@@ -1,5 +1,6 @@
 body{
-
+	width: 100vw;
+  	height: 100vh;
   	margin: 0px;
   	padding: 0px;
   	color: white;
@@ -15,12 +16,12 @@ body{
 	width: 50%;
 }
 #ankou{
-	height: 100px;
+	height: 15%;
 	float:left;
 }
 
 #wai{
-	height: 100px;
+	height: 15%;
 	display: flex;
 	align-items: center;
 }
