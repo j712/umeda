@@ -10,7 +10,7 @@
 	<div id="container"></div>
 	<div id="depth">depth:0</div>
 	<img src="ankou.png" id="ankou">
-	<div id="wai">＜わいがこの深海を照らしたるで！</div>
+	<div id="wai">＜わいはアンコウちゃんやで！よろしくな！</div>
 	<img src="maguro.png" id="maguro">
 	
 </body>
@@ -26,7 +26,9 @@
 			scrollTop = scrollTop / 100;
 			console.log(scrollTop);
 			let msg = "";
-			if(scrollTop < 2){
+			if(scrollTop = 0){
+				msg = "＜わいはアンコウちゃんやで！よろしくな！";
+			}else if(scrollTop < 2){
 				msg = "＜わいの出番じゃないな";
 			}else if(scrollTop < 6){
 				msg = "＜わいがこの深海を照らしてやるで!";
