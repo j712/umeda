@@ -1,27 +1,43 @@
 body{
-	width: 100vw;
-  	height: 100vh;
   	margin: 0px;
   	padding: 0px;
   	color: white;
   	background-color: black;
+  	font-size: 35px;
 }
 @keyframes moveimgOne {
-	0%{left: 100%;}
+	0%{left: 50%;}
 	100%{left:-50%;}
 }
 #maguro{
 	animation: moveimgOne 5s infinite;
-	position: relative;
+	position: fixed;
+	top: 10%;
 	width: 50%;
 }
+
 #ankou{
+	position: fixed;
+	top: 0px;
 	height: 100px;
 	float:left;
 }
-
 #wai{
+	position: fixed;
+	top: 0px;
+	left: 100px;
 	height: 100px;
 	display: flex;
 	align-items: center;
+	float: left;
 }
+#depth{
+	position: fixed;
+	top: 0px;
+	height: 100px;
+	right: 0px;
+}
+#container{
+  height:10000px;
+}
+

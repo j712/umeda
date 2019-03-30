@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
 	<meta charset="UTF-8">
 	<title>マグロさんやで</title>
 	<link rel="stylesheet" type="text/css" href="maguro.css">
 </head>
 <body>
-	<div><img src="ankou.png" id="ankou"></div><div id="wai">＜わいがこの深海を照らしたるで！</div>
-		<p><img src="maguro.png" id="maguro"></p>
-
+	<div id="container"></div>
+	<div id="depth">depth:0</div>
+	<img src="ankou.png" id="ankou">
+	<div id="wai">＜わいがこの深海を照らしたるで！</div>
+	<img src="maguro.png" id="maguro">
+	
 </body>
+	<script>
+		const depth = document.getElementById('depth');
+		//スクロールをトリガーにしたイベント
+		window.addEventListener('scroll', () => {
+		  //高さを取得して表示
+		  let scrollTop = document.scrollingElement.scrollTop;
+		　depth.textContent = 'depth:' + scrollTop;
+		}, false);
+	</script>
 </html>
+
