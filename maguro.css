@@ -3,7 +3,7 @@ body{
   	padding: 0px;
   	color: white;
   	background-color: black;
-  	font-size: 35px;
+  	font-size: 25px;
 }
 @keyframes moveimgOne {
 	0%{left: 50%;}

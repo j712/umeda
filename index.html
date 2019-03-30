@@ -16,11 +16,30 @@
 </body>
 	<script>
 		const depth = document.getElementById('depth');
+		const wai = document.getElementById('wai');
 		//スクロールをトリガーにしたイベント
 		window.addEventListener('scroll', () => {
-		  //高さを取得して表示
-		  let scrollTop = document.scrollingElement.scrollTop;
-		　depth.textContent = 'depth:' + scrollTop;
+			//高さを取得して表示
+			let scrollTop = document.scrollingElement.scrollTop;
+			depth.textContent = 'depth:' + scrollTop;
+
+			scrollTop = scrollTop / 100;
+			console.log(scrollTop);
+			let msg = "";
+			if(scrollTop < 2){
+				msg = "＜わいの出番じゃないな";
+			}else if(scrollTop < 6){
+				msg = "＜わいがこの深海を照らしてやるで!";
+			}else if(scrollTop < 10){
+				msg = "＜うわぁ！酸素うっす！た、たすけてくれぇ〜";
+			}else if(scrollTop < 30){
+				msg = "＜これが噂の無光層やな、全く光が届かんねんで";
+			}else if(scrollTop < 60){
+				msg = "＜ここが深海や！地球の表面積の半分ぐらいを占めてるで！";
+			}else if(scrollTop < 100){
+				msg = "＜6000m超えてもうたな・・・この深さは海全体でも２％だけやで";
+			}
+			wai.textContent = msg;
 		}, false);
 	</script>
 </html>
